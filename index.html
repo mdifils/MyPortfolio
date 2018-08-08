@@ -1,68 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Michel Difils Portfolio</title>
+        <title>Michel Difils|Portfolio - Full Stack Web Developer</title>
+        <!-- Insert logo in the website's title bar -->
+        <link rel="shortcut icon" href="img/logo.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+        <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style media="screen">
-            span {
-                border: 2px solid #8c43ff;
-                border-radius: 100px;
-                padding: 10px;
-            }
-            span:hover {
-                background: #8c43ff;
-            }
-            .image {
-    	display: block;
-    }
-    figure {
-    	position: relative;
-    	border-radius: 12px;
-    }
-    figure figcaption {
-    	display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	padding: 0rem 3rem;
-    	color: #fff;
-    	z-index: 1;
-	}
-    figcaption {
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	height: 100%;
-    	opacity: 1;
-    	-webkit-transition: .45s ease-in-out;
-    	transition: .45s ease-in-out;
-	}
-    img:hover {
-    	.image {
-        	opacity: 0;
-        }
-        figcaption {
-        	opacity: 1;
-        }
-        </style>
     </head>
     <body>
-        <h1>Welcome to my portfolio</h1>
-        <i class="fa fa-github" style="font-size:48px;color:blue"></i>
-        <span>visit website <i class="fa fa-angle-right"></i></span>
-        <h2>Places to Visit</h2>
-
-<p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
-
-<figure class="image">
-  <img src="beach.jpg" alt="Trulli" style="width:100%">
-  <figcaption>
-  <span>Fig.1 - Trulli, Puglia, Italy.</span>
-  <span class="ic">Visit Website <i class="fa fa-angle-right"></i></span>
-  </figcaption>
-</figure>
+        <!-- Navbar section -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-color">
+            <div class="container">
+                <a class="navbar-brand is-uppercased" href="#">
+                    <img src="img/logo.png" alt="michel logo">
+                    michel difils
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main or content section -->
+        <main class="main">
+            <div class="container is-flex">
+                <section id="about" class="about is-100-width">
+                    <h2>about me</h2>
+                    <p>
+                        Hi, my name is Michel Difils, I'm doing the Udacity Full Stack Web Developper nanodegree program.
+                        I like what I do, I'm eager to learn and keep on improving my skills.
+                        I build responsive websites and I write beautiful codes that are readable and functional.
+                    </p>
+                </section>
+                <section id="skills" class="skills is-100-width">
+                    <h2>my skills</h2>
+                    <p>
+                        My skills expand from Front-end to back-end, below are the languages and tools I use.
+                    </p>
+                    <div class="skills-are-flex">
+                        <span class="btn-is-rounded is-uppercased">html</span>
+                        <span class="btn-is-rounded is-uppercased">css3</span>
+                        <span class="btn-is-rounded is-uppercased">bootstrap</span>
+                        <span class="btn-is-rounded is-uppercased">javascript</span>
+                        <span class="btn-is-rounded is-uppercased">jquery</span>
+                        <span class="btn-is-rounded is-uppercased">python</span>
+                        <span class="btn-is-rounded is-uppercased">tkinter</span>
+                        <span class="btn-is-rounded is-uppercased">flask</span>
+                        <span class="btn-is-rounded is-uppercased">django</span>
+                    </div>
+                </section>
+                <div class="proj-contact-box is-flex">
+                    <section id="portfolio" class="portfolio is-100-width">
+                        <h2>my projects</h2>
+                        <p>
+                            Here are my recent projects, please hover over each one of them to see the description
+                            and click to visit the website for more details.
+                        </p>
+                        <!-- Using bootstrap's grid layout for project images -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 images-gap">
+                                    <figure class="proj-fig">
+                                        <!-- providing different image sizes that the browser will choose according to
+                                        the screen size -->
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="images/mockup-6x4.jpg">
+                                            <source media="(min-width: 992px)" srcset="images/mockup-8x5.jpg">
+                                            <img src="images/mockup-4x3.jpg" alt="mockup design" class="proj-img">
+                                        </picture>
+                                        <figcaption class="img-caption">
+                                            <p>Given a PDF design mockup, I translated it to a real website.</p>
+                                            <a href="https://mdifils.github.io/MockupDesign/" target="_blank" class="no-decoration">
+                                                <span class="btn-is-rounded">Website <i class="fa fa-angle-right"></i></span>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 images-gap">
+                                    <figure class="proj-fig">
+                                        <!-- providing different image sizes that the browser will choose according to
+                                        the screen size -->
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="images/movies-6x4.jpg">
+                                            <source media="(min-width: 992px)" srcset="images/movies-8x5.jpg">
+                                            <img src="images/movies-4x3.jpg" alt="movie trailers" class="proj-img">
+                                        </picture>
+                                        <figcaption class="img-caption">
+                                            <p>Movie trailers website is a webpage that allows
+                                            to watch your favorite trailers.</p>
+                                            <a href="https://mdifils.github.io/Movie_Trailers/" target="_blank" class="no-decoration">
+                                                <span class="btn-is-rounded">Website <i class="fa fa-angle-right"></i></span>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 images-gap">
+                                    <figure class="proj-fig">
+                                        <!-- providing different image sizes that the browser will choose according to
+                                        the screen size -->
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="images/connect-6x4.jpg">
+                                            <source media="(min-width: 992px)" srcset="images/connect-8x5.jpg">
+                                            <img src="images/connect-4x3.jpg" alt="connect 4" class="proj-img">
+                                        </picture>
+                                        <figcaption class="img-caption">
+                                            <p>Connect 4 is a 2 players game, the first to connect
+                                            4 bowls in a row wins.</p>
+                                            <a href="https://mdifils.github.io/ConnectFour/" target="_blank" class="no-decoration">
+                                                <span class="btn-is-rounded">Website <i class="fa fa-angle-right"></i></span>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 images-gap">
+                                    <figure class="proj-fig">
+                                        <!-- providing different image sizes that the browser will choose according to
+                                        the screen size -->
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="images/catalog-6x4.jpg">
+                                            <source media="(min-width: 992px)" srcset="images/catalog-8x5.jpg">
+                                            <img src="images/catalog-4x3.jpg" alt="catalog app" class="proj-img">
+                                        </picture>
+                                        <figcaption class="img-caption">
+                                            <p>This apps provides a list of items as well as a
+                                            user registration.</p>
+                                            <a href="https://mdifils.github.io/CatalogApp/" target="_blank" class="no-decoration">
+                                                <span class="btn-is-rounded">Website <i class="fa fa-angle-right"></i></span>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 images-gap">
+                                    <figure class="proj-fig">
+                                        <!-- providing different image sizes that the browser will choose according to
+                                        the screen size -->
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="images/neighborhood-6x4.jpg">
+                                            <source media="(min-width: 992px)" srcset="images/neighborhood-8x5.jpg">
+                                            <img src="images/neighborhood-4x3.jpg" alt="neighborhood map" class="proj-img">
+                                        </picture>
+                                        <figcaption class="img-caption">
+                                            <p>This is London's map with some highlighted
+                                            locations.</p>
+                                            <a href="https://mdifils.github.io/NeighborhoodMap/" target="_blank" class="no-decoration">
+                                                <span class="btn-is-rounded">Website <i class="fa fa-angle-right"></i></span>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 images-gap">
+                                    <figure class="proj-fig">
+                                        <!-- providing different image sizes that the browser will choose according to
+                                        the screen size -->
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="images/beach-6x4.jpg">
+                                            <source media="(min-width: 992px)" srcset="images/beach-8x5.jpg">
+                                            <img src="images/beach-4x3.jpg" alt="beach" class="proj-img">
+                                        </picture>
+                                        <figcaption class="img-caption">
+                                            <p>Linux Server Configuration project under
+                                            construction.</p>
+                                            <a href="https://mdifils.github.io/LinuxServerConfig/" target="_blank" class="no-decoration">
+                                                <span class="btn-is-rounded">Website <i class="fa fa-angle-right"></i></span>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="contact" class="contact is-100-width">
+                        <div class="container">
+                            <h2>contact me</h2>
+                            <p>Do you want to get in touch or hire me ?</p>
+                            <p>Please feel free to contact me via my
+                                <a href="mailto:michel.difils@gmail.com">email</a>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="get-in-touch">
+                <a href="https://github.com/mdifils" target="_blank" class="no-decoration">
+                    <i class="fa fa-github is-circle"></i>
+                </a>
+                <a href="mailto:michel.difils@gmail.com" class="no-decoration">
+                    <i class="fa fa-envelope-o is-circle"></i>
+                </a>
+            </div>
+            Copyright <i class="fa fa-copyright"></i> by Michel Difils
+        </footer>
     </body>
 </html>

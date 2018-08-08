@@ -1,0 +1,225 @@
+/* preventing Bootsrap fixed navbar to overlap the 'about' section */
+body {
+    padding-top: 3.75em;
+}
+
+
+/* Navbar */
+.bg-color {
+    background: #293347;
+}
+
+
+.is-uppercased {
+    text-transform: uppercase;
+}
+
+
+/* Main */
+.main .container {
+    background: khaki;
+}
+
+
+h2::first-letter {
+    text-transform: uppercase;
+}
+
+
+.is-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Making every flex items take 100% the width of the screen
+when its size is below the tablet one : 768 px */
+.is-100-width {
+    width: 100%;
+}
+
+
+.skills-are-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.skills-are-flex span {
+    text-align: center;
+    background: purple;
+    margin:.125em;
+    max-width: 14.375em;
+}
+
+
+.contact,
+.about,
+.portfolio {
+    text-align: center;
+}
+
+
+.about,
+.contact {
+    border-radius: .875em;
+    box-shadow: .125em .125em 1.25em gray;
+    margin-top: 3.5em;
+    margin-bottom: .875em;
+}
+
+
+.proj-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .875em;
+    transition: 0.5s;
+}
+
+
+.images-gap {
+    margin-bottom: 1.25em;
+}
+
+
+.proj-fig,
+.img-caption {
+    text-align: center;
+}
+
+
+.img-caption {
+    /* make the caption invisible by default */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    transition: 0.5s;
+    padding: 10%;
+}
+
+
+.btn-is-rounded {
+    color: white;
+    border: .125em solid purple;
+    border-radius: 1.875em;
+    padding: .625em;
+}
+
+
+.no-decoration:hover {
+    /* I remove links default settings: blue color and underlined on mouseover event */
+    text-decoration: none;
+    color: white;
+}
+
+
+.no-decoration:hover .btn-is-rounded {
+    background: purple;
+}
+
+
+/* Make the project image invisible on mouseover event */
+.proj-fig:hover .proj-img {
+    opacity: 0;
+}
+
+
+.proj-fig:hover {
+    background: #293347;
+    color: white;
+    border-radius: .875em;
+}
+
+
+/* Make the image caption visible on mouseover event */
+.proj-fig:hover .img-caption {
+    opacity: 1;
+}
+
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    /* From the tablet screen size flex item 'skills' takes 20% of the sreen's width */
+    .skills {
+        width: 20%;
+        order: 1;
+        color: white;
+        background: #293347;
+        border-radius: .875em;
+        margin: 3% 5% 3% 0;
+        padding: .625em;
+    }
+
+    /* From the tablet screen size flex item 'proj-contact-box' takes 75% of the
+     sreen's width while the flex items inside 'portfolio' and 'contact' remain
+     100% wide. Keep in mind  that the 5% left is taken by skills' margin-right */
+    .proj-contact-box {
+        width: 75%;
+        order: 2;
+    }
+
+
+    /* From the tablet screen size 'about' and 'contact' take 70% of their parent's width
+    while the 30% left are taken by their margins (left and right) */
+    .about,
+    .contact {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+    /* I decrease the font-size to make the title h2 not wrap */
+    .skills h2 {
+        font-size: 150%;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    /* I decrease the font-size of the brand text to make the humber icon not wrap
+    under it */
+    .navbar-brand {
+        font-size: 110%;
+    }
+
+
+    /* I adapt the font-size to make the caption fit in the figure container */
+    .img-caption {
+        font-size: 87.5%;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /* I adapt the font-size to make the caption fit in the figure container */
+    .img-caption {
+        font-size: .75em;
+    }
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #293347;
+    color: white;
+    padding: .625em;
+}
+
+
+.is-circle {
+    border: .125em solid purple;
+    border-radius: 50%;
+    padding: .625em;
+    margin: .25em;
+    color: white;
+}
+
+
+.is-circle:hover {
+    background: purple;
+}
